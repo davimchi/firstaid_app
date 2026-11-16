@@ -1,17 +1,19 @@
-# firstaid_app
+# First Aid App (Offline-First)
 
-A new Flutter project.
+A Flutter-based, offline-first emergency response application designed for low-connectivity environments.
 
-## Getting Started
+## Features
+- **100% Offline Capable:** All first-aid protocols and emergency contacts are stored locally using SQLite.
+- **Bilingual:** Full support for English and Kiswahili.
+- **Hands-Free Audio:** Text-to-Speech reads instructions aloud for users with occupied hands.
+- **GPS Hospital Locator:** Calculates distance to nearby hospitals offline using the Haversine formula.
+- **Sync Engine:** Background version checks to download new protocols when internet is available.
 
-This project is a starting point for a Flutter application.
+## Tech Stack
+- Flutter & Dart
+- SQLite (sqflite)
+- Geolocator
+- Flutter TTS
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Backend
+This app connects to a Laravel 13 API. [Link to backend repo](https://github.com/YOUR_USERNAME/firstaid-api)
